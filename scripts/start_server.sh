@@ -1,3 +1,4 @@
 #!/bin/bash
 cd /home/ec2-user/node-app
-nohup node server.js > app.log 2>&1 &
+mkdir -p /home/ec2-user/node-app/logs
+nohup node server.js > /home/ec2-user/node-app/logs/app.log 2>&1 &
